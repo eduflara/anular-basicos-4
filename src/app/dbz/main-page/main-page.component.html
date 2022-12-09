@@ -1,2 +1,27 @@
 <h1>Dragon Ball Z</h1>
 <hr>
+
+<div class="row">
+    <div class="col">
+        <h3>Listado</h3>
+        <hr>
+        <ul>
+            <li>Aitor - 400</li>
+            <li>Pedro - 200</li>
+            <li>Josean - 100</li>
+        </ul>
+    </div>
+    <div class="col">
+        <h3>Agregar</h3>
+        <hr>
+        <form (ngSubmit)="agregar()">
+            <input placeholder="Nombre" type="text"/>
+            <input placeholder="Poder" type="number"/>
+
+            <button type="submit">
+                Agregar
+            </button>
+        </form>
+    </div>
+
+</div>
