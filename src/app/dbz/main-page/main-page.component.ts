@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Personaje } from '../interfaces/interface';
 
 @Component({
   selector: 'app-main-page',
@@ -6,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent {
 
-  agregar() {
-    console.log('Esto es una prueba');
-  }
+personajes: Personaje[] = [
+]
+
+nuevo:Personaje = {
+  nombre:'',
+  poder:0
+}
+
 }

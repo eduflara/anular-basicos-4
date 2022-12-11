@@ -3,25 +3,12 @@
 
 <div class="row">
     <div class="col">
-        <h3>Listado</h3>
-        <hr>
-        <ul>
-            <li>Aitor - 400</li>
-            <li>Pedro - 200</li>
-            <li>Josean - 100</li>
-        </ul>
+        <app-personajes [personajes]="personajes">
+        </app-personajes>        
     </div>
     <div class="col">
-        <h3>Agregar</h3>
-        <hr>
-        <form (ngSubmit)="agregar()">
-            <input placeholder="Nombre" type="text"/>
-            <input placeholder="Poder" type="number"/>
-
-            <button type="submit">
-                Agregar
-            </button>
-        </form>
+        <app-agregar-personaje [personajes]="personajes" [nuevo]="nuevo">            
+        </app-agregar-personaje>
     </div>
 
 </div>
